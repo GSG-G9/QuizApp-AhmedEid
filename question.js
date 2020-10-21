@@ -1,6 +1,6 @@
 const questions = [
   {
-    question1: "Inside which HTML element do we put the JavaScript ? ",
+    question: "Inside which HTML element do we put the JavaScript ? ",
     answers: [
       {
         ans1: "<script>",
@@ -22,7 +22,7 @@ const questions = [
     ],
   },
   {
-    question2:
+    question:
       "What is the correct syntax for referring to an external script called 'xxx.js' ?",
 
     answers: [
@@ -45,7 +45,7 @@ const questions = [
     ],
   },
   {
-    question3: "Where is the correct place to insert a JavaScript?",
+    question: "Where is the correct place to insert a JavaScript?",
 
     answers: [
       {
@@ -67,7 +67,7 @@ const questions = [
     ],
   },
   {
-    question4: "How do you call a function named",
+    question: "How do you call a function named",
     answers: [
       {
         ans1: " call myFunction()",
@@ -88,7 +88,7 @@ const questions = [
     ],
   },
   {
-    question5:
+    question:
       "How do you write a conditional statement for executing some statements only if 'i' is equal to 5",
     answers: [
       {
@@ -110,7 +110,7 @@ const questions = [
     ],
   },
   {
-    question6: "How does a 'for' loop start?",
+    question: "How does a 'for' loop start?",
     answers: [
       {
         ans1: " for (i = 0; i <= 5)",
@@ -131,7 +131,7 @@ const questions = [
     ],
   },
   {
-    question7: "How can you add a comment in a JavaScript?",
+    question: "How can you add a comment in a JavaScript?",
     answers: [
       {
         ans1: " //This is a comment",
@@ -152,7 +152,7 @@ const questions = [
     ],
   },
   {
-    question8: "How do you put a message in the browser's status bar?",
+    question: "How do you put a message in the browser's status bar?",
     answers: [
       {
         ans1: " statusbar = 'put your message here'",
@@ -173,7 +173,7 @@ const questions = [
     ],
   },
   {
-    question9: "In JavaScript, which of the following is a logical operator?",
+    question: "In JavaScript, which of the following is a logical operator?",
     answers: [
       {
         ans1: "|",
@@ -194,7 +194,7 @@ const questions = [
     ],
   },
   {
-    question10:
+    question:
       "In JavaScript, which of the following is NOT an assignment operator?",
     answers: [
       {
@@ -216,7 +216,7 @@ const questions = [
     ],
   },
   {
-    question11:
+    question:
       "A named element in a JavaScript program that is used to store and retrieve data is a _____.",
     answers: [
       {
@@ -238,7 +238,7 @@ const questions = [
     ],
   },
   {
-    question12: "How do you find the largest number of 2 and 4?",
+    question: "How do you find the largest number of 2 and 4?",
     answers: [
       {
         ans1: "Math.ceil(2,4)",
@@ -259,3 +259,7 @@ const questions = [
     ],
   },
 ];
+ 
+const result =[
+ 
+]
