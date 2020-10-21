@@ -6,75 +6,42 @@ btn2.style.display = "none";
 
 let questionsArray = [];
 let correctAnswers = 0;
+let choosedAnswer;
 
 function getQuestion(questionText) {
   const questionTitle = document.createElement("h3");
   questionTitle.textContent = questionText.question;
-
-  const ans1 = document.createElement("input");
-  const label1 = document.createElement("label");
-  ans1.setAttribute("type", "radio");
-  ans1.setAttribute("name", "answer");
-  ans1.setAttribute("value", questionText.answers[0].ans);
-  label1.setAttribute("for",questionText.answers[0].ans);
-  label1.textContent = questionText.answers[0].ans;
-
-  const ans2= document.createElement("input");
-  const label2 = document.createElement("label");
-  ans2.setAttribute("type", "radio");
-  ans2.setAttribute("name", "answer");
-  ans2.setAttribute("value", questionText.answers[1].ans);
-  label2.setAttribute("for",questionText.answers[1].ans);
-  label2.textContent = questionText.answers[1].ans;
-
-  const ans3 = document.createElement("input");
-  const label3 = document.createElement("label");
-  ans3.setAttribute("type", "radio");
-  ans3.setAttribute("name", "answer");
-  ans1.setAttribute("value", questionText.answers[2].ans);
-  label3.setAttribute("for",questionText.answers[2].ans);
-  label3.textContent = questionText.answers[2].ans;
-
-  const ans4 = document.createElement("input");
-  const label4 = document.createElement("label");
-  ans4.setAttribute("type", "radio");
-  ans4.setAttribute("name", "answer");
-  ans4.setAttribute("value", questionText.answers[3].ans);
-  label4.setAttribute("for",questionText.answers[3].ans);
-  label4.textContent = questionText.answers[3].ans;
-
   questionDiv.appendChild(questionTitle);
-  questionDiv.appendChild(ans1);
-  questionDiv.appendChild(label1);
 
-  questionDiv.appendChild(ans2);
-  questionDiv.appendChild(label2);
+  for (let answerObj of questionText.answers) {
+    const ans = document.createElement("input");
+    const label = document.createElement("label");
+    ans.setAttribute("type", "radio");
+    ans.setAttribute("name", "answer");
+    ans.setAttribute("value", answerObj.ans);
+    label.setAttribute("for", answerObj.ans);
+    label.textContent = answerObj.ans;
 
-  questionDiv.appendChild(ans3);
-  questionDiv.appendChild(label3);
-
-  questionDiv.appendChild(ans4);
-  questionDiv.appendChild(label4);
+    questionDiv.appendChild(ans);
+    questionDiv.appendChild(label);
+    console.log(answerObj.ans);
+  }
 
   quizDiv.appendChild(questionDiv);
 
   document.querySelectorAll('input[name="answer"]').forEach((elem) => {
     elem.addEventListener("change", function (event) {
+      choosedAnswer = event.target.value;
 
-      const item = event.target.value;
-
-     questionText.answers.filter(function (answer) {
-      
-      if (answer.correct === true && answer.ans === item){
-        correctAnswers++
-      }
-  
+      questionText.answers.filter(function (answer) {
+        if (answer.correct === true && answer.ans === choosedAnswer) {
+          correctAnswers++;
+        }
+      });
     });
   });
- })
-
 }
-const btn = document.createElement("button");
+const btn = document.createElement("button"); //next
 btn.textContent = "Next";
 btn.addEventListener("click", function () {
   let questionText = questions[Math.floor(Math.random() * questions.length)];
@@ -83,14 +50,13 @@ btn.addEventListener("click", function () {
   if (questionsArray.length <= 9) {
     getQuestion(questionText);
   }
-
   if (questionsArray.length === 9) {
     btn.setAttribute("disabled", "true");
     btn2.style.display = "block";
   }
 });
 
-btn2.addEventListener("click", function () {
+btn2.addEventListener("click", function () { //result
   questionDiv.textContent = "";
   const result = document.createElement("p");
   result.textContent = `your score is ${correctAnswers}`;
