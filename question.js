@@ -259,3 +259,7 @@ const questions = [
     ],
   },
 ];
+ 
+const result =[
+ 
+]
