@@ -24,7 +24,6 @@ function getQuestion(questionText) {
 
     questionDiv.appendChild(ans);
     questionDiv.appendChild(label);
-    console.log(answerObj.ans);
   }
 
   quizDiv.appendChild(questionDiv);
@@ -60,8 +59,6 @@ btn2.addEventListener("click", function () { //result
   questionDiv.textContent = "";
   const result = document.createElement("p");
   result.textContent = `your score is ${correctAnswers}`;
-  console.log(correctAnswers);
-
   quizDiv.appendChild(result);
 });
 
