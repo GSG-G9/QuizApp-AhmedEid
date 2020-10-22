@@ -3,20 +3,20 @@ const questions = [
     question: "Inside which HTML element do we put the JavaScript ? ",
     answers: [
       {
-        ans1: "<script>",
+        ans: "<script>",
         correct: true,
       },
 
       {
-        ans2: "<js>",
+        ans: "<js>",
         correct: false,
       },
       {
-        ans3: "<scripting>",
+        ans: "<scripting>",
         correct: false,
       },
       {
-        ans4: " <javascript>",
+        ans: " <javascript>",
         correct: false,
       },
     ],
@@ -27,19 +27,19 @@ const questions = [
 
     answers: [
       {
-        ans1: "<script name='xxx.js'>",
+        ans: "<script name='xxx.js'>",
         correct: false,
       },
       {
-        ans2: "<script src='xxx.js'>",
+        ans: "<script src='xxx.js'>",
         correct: true,
       },
       {
-        ans3: "<script href='xxx.js'>",
+        ans: "<script href='xxx.js'>",
         correct: false,
       },
       {
-        ans3: "<script value='xxx.js'>",
+        ans: "<script value='xxx.js'>",
         correct: false,
       },
     ],
@@ -49,19 +49,19 @@ const questions = [
 
     answers: [
       {
-        ans1: " Both the <head> section and the <body> section are correct",
+        ans: " Both the <head> section and the <body> section are correct",
         correct: true,
       },
       {
-        ans2: " The <body> section",
+        ans: " The <body> section",
         correct: false,
       },
       {
-        ans3: " The <head> section",
+        ans: " The <head> section",
         correct: false,
       },
       {
-        ans4: " The <footer> section",
+        ans: " The <footer> section",
         correct: false,
       },
     ],
@@ -70,19 +70,19 @@ const questions = [
     question: "How do you call a function named",
     answers: [
       {
-        ans1: " call myFunction()",
+        ans: "call myFunction()",
         correct: false,
       },
       {
-        ans2: " call function myFunction",
+        ans: " call function myFunction",
         correct: false,
       },
       {
-        ans3: " myFunction()",
+        ans: " myFunction()",
         correct: true,
       },
       {
-        ans4: "  Call.myFunction()",
+        ans: "  Call.myFunction()",
         correct: false,
       },
     ],
@@ -92,19 +92,19 @@ const questions = [
       "How do you write a conditional statement for executing some statements only if 'i' is equal to 5",
     answers: [
       {
-        ans1: " if i==5 then",
+        ans: " if i==5 then",
         correct: false,
       },
       {
-        ans2: "  if (i==5)",
+        ans: "if (i==5)",
         correct: true,
       },
       {
-        ans3: "  if i=5 then",
+        ans: "if i=5 then",
         correct: false,
       },
       {
-        ans4: "   if i=5",
+        ans: "   if i=5",
         correct: false,
       },
     ],
@@ -113,19 +113,19 @@ const questions = [
     question: "How does a 'for' loop start?",
     answers: [
       {
-        ans1: " for (i = 0; i <= 5)",
+        ans: " for (i = 0; i <= 5)",
         correct: false,
       },
       {
-        ans2: "  for i = 1 to 5",
+        ans: "  for i = 1 to 5",
         correct: false,
       },
       {
-        ans3: "for (i <= 5; i++)",
+        ans: "for (i <= 5; i++)",
         correct: false,
       },
       {
-        ans4: " for (i = 0; i <= 5; i++)",
+        ans: " for (i = 0; i <= 5; i++)",
         correct: true,
       },
     ],
@@ -134,19 +134,19 @@ const questions = [
     question: "How can you add a comment in a JavaScript?",
     answers: [
       {
-        ans1: " //This is a comment",
+        ans: " //This is a comment",
         correct: true,
       },
       {
-        ans2: " 'This is a comment",
+        ans: " 'This is a comment",
         correct: false,
       },
       {
-        ans3: "<!--This is a comment-->",
+        ans: "<!--This is a comment-->",
         correct: false,
       },
       {
-        ans4: " #This is a comment",
+        ans: " #This is a comment",
         correct: false,
       },
     ],
@@ -155,19 +155,19 @@ const questions = [
     question: "How do you put a message in the browser's status bar?",
     answers: [
       {
-        ans1: " statusbar = 'put your message here'",
+        ans: " statusbar = 'put your message here'",
         correct: false,
       },
       {
-        ans2: "window.status('put your message here')",
+        ans: "window.status('put your message here')",
         correct: false,
       },
       {
-        ans3: "window.status = 'put your message here'",
+        ans: "window.status = 'put your message here'",
         correct: true,
       },
       {
-        ans4: "status('put your message here')",
+        ans: "status('put your message here')",
         correct: false,
       },
     ],
@@ -176,19 +176,19 @@ const questions = [
     question: "In JavaScript, which of the following is a logical operator?",
     answers: [
       {
-        ans1: "|",
+        ans: "|",
         correct: false,
       },
       {
-        ans2: "&&",
+        ans: "&&",
         correct: true,
       },
       {
-        ans3: "%",
+        ans: "%",
         correct: false,
       },
       {
-        ans4: "/",
+        ans: "/",
         correct: false,
       },
     ],
@@ -198,19 +198,19 @@ const questions = [
       "In JavaScript, which of the following is NOT an assignment operator?",
     answers: [
       {
-        ans1: "+=",
+        ans: "+=",
         correct: false,
       },
       {
-        ans2: "||",
+        ans: "||",
         correct: true,
       },
       {
-        ans3: "*=",
+        ans: "*=",
         correct: false,
       },
       {
-        ans4: " =",
+        ans: " =",
         correct: false,
       },
     ],
@@ -220,19 +220,19 @@ const questions = [
       "A named element in a JavaScript program that is used to store and retrieve data is a _____.",
     answers: [
       {
-        ans1: "Method",
+        ans: "Method",
         correct: false,
       },
       {
-        ans2: "assignment operator",
+        ans: "assignment operator",
         correct: false,
       },
       {
-        ans3: "string",
+        ans: "string",
         correct: false,
       },
       {
-        ans4: " Variable",
+        ans: " Variable",
         correct: true,
       },
     ],
@@ -241,25 +241,21 @@ const questions = [
     question: "How do you find the largest number of 2 and 4?",
     answers: [
       {
-        ans1: "Math.ceil(2,4)",
+        ans: "Math.ceil(2,4)",
         correct: false,
       },
       {
-        ans2: "Math.max(2,4)",
+        ans: "Math.max(2,4)",
         correct: true,
       },
       {
-        ans3: "ceil(2,4)",
+        ans: "ceil(2,4)",
         correct: false,
       },
       {
-        ans4: " top(2,4)",
+        ans: " top(2,4)",
         correct: false,
       },
     ],
   },
 ];
- 
-const result =[
- 
-]
